@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blush Nail Beauty — Ankara Çankaya</title>
+    <meta name="description" content="Ankara Çankaya'da profesyonel manikür, pedikür, kalıcı oje, protez tırnak ve nail art hizmetleri. Blush Nail Beauty ile şıklığınızı tamamlayın.">
+    <meta name="theme-color" content="#1b1316">
+
+    <!-- Google Fonts: Fraunces (serif/display) · Manrope (body) · IBM Plex Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600;1,9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+    ============================================================ -->
+    <header class="nav-header" id="top">
+        <nav class="nav-inner container" aria-label="Ana navigasyon">
+
+            <a href="#top" class="nav-logo" aria-label="Blush Nail Beauty — sayfanın başına git">
+                <span class="nav-logo__brand">Blush</span>
+                <span class="nav-logo__sub">NAIL BEAUTY</span>
+            </a>
+
+            <button class="nav-toggle"
+                    aria-label="Menüyü aç ya da kapat"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu" role="list">
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#gallery"  class="nav-link">Galeri</a></li>
+                <li><a href="#reviews"  class="nav-link">Yorumlar</a></li>
+                <li><a href="#about"    class="nav-link">Hakkımızda</a></li>
+                <li><a href="#location" class="nav-link">Konum</a></li>
+            </ul>
+
+            <a href="#appointment" class="btn btn--primary nav-cta">Randevu Al</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+             HERO
+        ============================================================ -->
+        <section class="hero" id="hero" aria-label="Ana tanıtım bölümü">
+
+            <div class="hero__content">
+                <p class="hero__eyebrow mono-label hero-anim">ANKARA · ÇANKAYA</p>
+
+                <h1 class="hero__heading hero-anim">
+                    Tırnaklarınız,<br>
+                    <em>İmzanız.</em>
+                </h1>
+
+                <p class="hero__sub hero-anim">
+                    Her detayda özen, her fırça darbesinde ustalık.<br>
+                    Çankaya'nın kalbinde, size özel bir bakım deneyimi.
+                </p>
+
+                <div class="hero__ctas hero-anim">
+                    <!-- href is set dynamically by script.js using WHATSAPP_NUMBER -->
+                    <a href="#"
+                       class="btn btn--primary js-whatsapp-hero"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="WhatsApp üzerinden randevu al">
+                        <!-- WhatsApp logo SVG (brand icon — no trademark issues with official path) -->
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" width="18" height="18">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        WhatsApp'tan Randevu Al
+                    </a>
+
+                    <a href="#services" class="btn btn--outline">Hizmetleri Gör</a>
+                </div>
+            </div>
+
+            <!-- 6 shade swatches — each represents a service; click scrolls to that card -->
+            <div class="hero__swatches">
+                <div class="swatch-strip" aria-label="Hizmet renk tonları — tıklayarak hizmete gidin" role="group">
+
+                    <button class="swatch hero-anim"
+                            data-target="service-1"
+                            aria-label="Manikür & Cilt Bakımı hizmetine git"
+                            style="--sw-color:#c9707c; --sw-glow:rgba(201,112,124,0.45);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="swatch hero-anim"
+                            data-target="service-2"
+                            aria-label="Pedikür & Cilt Bakımı hizmetine git"
+                            style="--sw-color:#8c2f39; --sw-glow:rgba(140,47,57,0.5);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="swatch hero-anim"
+                            data-target="service-3"
+                            aria-label="Kalıcı Oje (Gel Polish) hizmetine git"
+                            style="--sw-color:#df97a0; --sw-glow:rgba(223,151,160,0.45);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="swatch hero-anim"
+                            data-target="service-4"
+                            aria-label="Protez Tırnak hizmetine git"
+                            style="--sw-color:#c9a24b; --sw-glow:rgba(201,162,75,0.45);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="swatch hero-anim"
+                            data-target="service-5"
+                            aria-label="Nail Art & Taş Süsleme hizmetine git"
+                            style="--sw-color:#cdb9b0; --sw-glow:rgba(205,185,176,0.4);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="swatch swatch--rim hero-anim"
+                            data-target="service-6"
+                            aria-label="Kaş & Kirpik Laminasyonu hizmetine git"
+                            style="--sw-color:#3a1a20; --sw-glow:rgba(140,47,57,0.4);">
+                        <span class="swatch__gloss" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ============================================================
+             SERVICES
+        ============================================================ -->
+        <section class="services" id="services" aria-labelledby="services-heading">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <p class="mono-label section-header__label">— HİZMETLER</p>
+                    <h2 class="section-title" id="services-heading">Uzmanlık Alanlarımız</h2>
+                </header>
+
+                <div class="services__grid">
+
+                    <!-- Service 01 -->
+                    <article class="service-card reveal" id="service-1" aria-labelledby="sc-title-1">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.01</span>
+                            <span class="service-card__dur mono-label">≈ 60 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-1">Manikür &amp; Cilt Bakımı</h3>
+                        <p class="service-card__desc">El bakımından şekillendirmeye, klasik veya özel teknikle uygulanan ojesiyle tırnaklarınız hem sağlıklı hem estetik görünür.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Manikür & Cilt Bakımı"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                    <!-- Service 02 -->
+                    <article class="service-card reveal" id="service-2" aria-labelledby="sc-title-2">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.02</span>
+                            <span class="service-card__dur mono-label">≈ 75 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-2">Pedikür &amp; Cilt Bakımı</h3>
+                        <p class="service-card__desc">Ayak bakımı, tırnak şekillendirme ve cilt yumuşatma ritüeli ile adım attığınız her yerde kendinize güvenin.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Pedikür & Cilt Bakımı"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                    <!-- Service 03 -->
+                    <article class="service-card reveal" id="service-3" aria-labelledby="sc-title-3">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.03</span>
+                            <span class="service-card__dur mono-label">≈ 50 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-3">
+                            Kalıcı Oje
+                            <span class="service-card__variant">Gel Polish</span>
+                        </h3>
+                        <p class="service-card__desc">Günlerce solmayan, çiplenmeyen renk. Geniş renk paletimizden seçiminizi yapın, UV lambasıyla sabitlesin.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Kalıcı Oje (Gel Polish)"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                    <!-- Service 04 -->
+                    <article class="service-card reveal" id="service-4" aria-labelledby="sc-title-4">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.04</span>
+                            <span class="service-card__dur mono-label">≈ 90 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-4">
+                            Protez Tırnak
+                            <span class="service-card__variant">Akrilik / Jel</span>
+                        </h3>
+                        <p class="service-card__desc">Doğal tırnaklarınızı uzatmak ya da güçlendirmek için akrilik veya jel seçenekleriyle kişiye özel şekillendirme.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Protez Tırnak (Akrilik/Jel)"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                    <!-- Service 05 -->
+                    <article class="service-card reveal" id="service-5" aria-labelledby="sc-title-5">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.05</span>
+                            <span class="service-card__dur mono-label">≈ 120 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-5">Nail Art &amp; Taş Süsleme</h3>
+                        <p class="service-card__desc">Geometrik desenlerden florallere, el çiziminden taş aplikasyonuna kadar tırnaklarınız bir tuvale dönüşür.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Nail Art & Taş Süsleme"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                    <!-- Service 06 -->
+                    <article class="service-card reveal" id="service-6" aria-labelledby="sc-title-6">
+                        <div class="service-card__meta">
+                            <span class="service-card__num mono-label">No.06</span>
+                            <span class="service-card__dur mono-label">≈ 45 dk</span>
+                        </div>
+                        <h3 class="service-card__title" id="sc-title-6">Kaş &amp; Kirpik Laminasyonu</h3>
+                        <p class="service-card__desc">Bakımlı, dolgun ve şekilli bir görünüm için laminasyon tekniğiyle kaş ve kirpiklerinize yeni bir ifade kazandırın.</p>
+                        <a href="#"
+                           class="btn btn--ghost js-whatsapp-service"
+                           data-service="Kaş & Kirpik Laminasyonu"
+                           target="_blank"
+                           rel="noopener noreferrer">WhatsApp'tan Sor</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             GALLERY
+        ============================================================ -->
+        <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <p class="mono-label section-header__label">— GALERİ</p>
+                    <h2 class="section-title" id="gallery-heading">Çalışmalarımızdan</h2>
+                </header>
+
+                <!-- Placeholder grid — real photos to be added later -->
+                <div class="gallery__grid" id="gallery-grid">
+
+                    <div class="gallery-item reveal" style="--ga:#8c2f39;--gb:#c9707c;--gd:138deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M6 5 L6.8 9.2 L11 10 L6.8 10.8 L6 15 L5.2 10.8 L1 10 L5.2 9.2 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item gallery-item--tall reveal" style="--ga:#1b1316;--gb:#8c2f39;--gd:162deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M6 5 L6.8 9.2 L11 10 L6.8 10.8 L6 15 L5.2 10.8 L1 10 L5.2 9.2 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item reveal" style="--ga:#c9a24b;--gb:#df97a0;--gd:145deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M24 18 L24.6 21.4 L28 22 L24.6 22.6 L24 26 L23.4 22.6 L20 22 L23.4 21.4 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item reveal" style="--ga:#241a1d;--gb:#c9707c;--gd:118deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M6 5 L6.8 9.2 L11 10 L6.8 10.8 L6 15 L5.2 10.8 L1 10 L5.2 9.2 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item gallery-item--tall reveal" style="--ga:#df97a0;--gb:#f6ede6;--gd:152deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M24 18 L24.6 21.4 L28 22 L24.6 22.6 L24 26 L23.4 22.6 L20 22 L23.4 21.4 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item reveal" style="--ga:#c9707c;--gb:#c9a24b;--gd:132deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M6 5 L6.8 9.2 L11 10 L6.8 10.8 L6 15 L5.2 10.8 L1 10 L5.2 9.2 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item reveal" style="--ga:#8c2f39;--gb:#1b1316;--gd:142deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M24 18 L24.6 21.4 L28 22 L24.6 22.6 L24 26 L23.4 22.6 L20 22 L23.4 21.4 Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gallery-item reveal" style="--ga:#cdb9b0;--gb:#df97a0;--gd:126deg">
+                        <span class="gallery-item__label mono-label">Instagram Görseli</span>
+                        <svg class="gallery-item__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                            <path d="M16 2 L17.6 13.4 L29 16 L17.6 18.6 L16 30 L14.4 18.6 L3 16 L14.4 13.4 Z"/>
+                            <path opacity="0.5" d="M6 5 L6.8 9.2 L11 10 L6.8 10.8 L6 15 L5.2 10.8 L1 10 L5.2 9.2 Z"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="gallery__footer reveal">
+                    <p class="gallery__note">Tüm çalışmalarımızı görmek için Instagram sayfamızı ziyaret edin.</p>
+                    <a href="https://www.instagram.com/blush_nailbeauty/"
+                       class="btn btn--outline"
+                       target="_blank"
+                       rel="noopener noreferrer">@blush_nailbeauty</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+             REVIEWS
+        ============================================================ -->
+        <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <p class="mono-label section-header__label">— MÜŞTERİ YORUMLARI</p>
+                    <h2 class="section-title" id="reviews-heading">Neler Söylediler</h2>
+                </header>
+
+                <div class="reviews__grid" id="reviews-grid">
+
+                    <article class="review-card reveal" aria-label="Müşteri yorumu">
+                        <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">
+                            <span aria-hidden="true">★★★★★</span>
+                        </div>
+                        <blockquote class="review-card__text">
+                            "Yıllardır aradığım tırnak salonunu sonunda buldum. Özenli çalışma, temiz ortam ve gerçekten dinleyici bir ekip. Nail art çalışmam tam hayal ettiğim gibi çıktı."
+                        </blockquote>
+                        <footer class="review-card__footer">
+                            <cite class="review-card__name">A. Y.</cite>
+                            <span class="review-card__source mono-label">Google Yorumu</span>
+                        </footer>
+                    </article>
+
+                    <article class="review-card reveal" aria-label="Müşteri yorumu">
+                        <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">
+                            <span aria-hidden="true">★★★★★</span>
+                        </div>
+                        <blockquote class="review-card__text">
+                            "Kalıcı oje için gitmiştim ama pedikür de yaptırdım. Her ikisi de çok başarılıydı. Kullanılan ürünlerin kalitesi belli oluyor. Kesinlikle tekrar geleceğim."
+                        </blockquote>
+                        <footer class="review-card__footer">
+                            <cite class="review-card__name">D. K.</cite>
+                            <span class="review-card__source mono-label">Google Yorumu</span>
+                        </footer>
+                    </article>
+
+                    <article class="review-card reveal" aria-label="Müşteri yorumu">
+                        <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">
+                            <span aria-hidden="true">★★★★★</span>
+                        </div>
+                        <blockquote class="review-card__text">
+                            "Çankaya'da bu kadar kaliteli bir salon bulmak gerçekten şaşırttı. Protez tırnak uygulaması hem sağlam hem çok doğal göründü. Çevremdeki herkese öneriyorum."
+                        </blockquote>
+                        <footer class="review-card__footer">
+                            <cite class="review-card__name">S. E.</cite>
+                            <span class="review-card__source mono-label">Google Yorumu</span>
+                        </footer>
+                    </article>
+
+                    <article class="review-card reveal" aria-label="Müşteri yorumu">
+                        <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">
+                            <span aria-hidden="true">★★★★★</span>
+                        </div>
+                        <blockquote class="review-card__text">
+                            "Kirpik laminasyonu yaptırdım, müthiş sonuç! Randevu saatine tam uyuldu, salon çok hijyenik ve ekip son derece ilgili. Blush'u keşfettiğim için mutluyum."
+                        </blockquote>
+                        <footer class="review-card__footer">
+                            <cite class="review-card__name">M. Ç.</cite>
+                            <span class="review-card__source mono-label">Google Yorumu</span>
+                        </footer>
+                    </article>
+
+                </div>
+
+                <!-- Hidden attribution node required by PlacesService -->
+                <div id="reviews-attribution" aria-hidden="true" hidden></div>
+
+                <div class="reviews__footer reveal">
+                    <a href="https://www.google.com/maps/place/Blush+Nail+Beauty/@39.8875413,32.8892574,19.73z/data=!4m6!3m5!1s0x14d34f8fbf13970b:0x8eb2d6bc916949c1!8m2!3d39.887811!4d32.888967!16s%2Fg%2F11sb96x5gz"
+                       class="btn btn--outline"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Tüm Yorumları Gör
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+             ABOUT
+        ============================================================ -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about__inner">
+
+                    <div class="about__text-col reveal">
+                        <header class="section-header">
+                            <p class="mono-label section-header__label">— HAKKIMIZDA</p>
+                            <h2 class="section-title" id="about-heading">
+                                Tırnak Bakımını<br>
+                                <em>Bir Ritüele</em> Dönüştürüyoruz
+                            </h2>
+                        </header>
+                        <p class="about__philosophy">
+                            Blush Nail Beauty, Ankara Çankaya'da kurulmuş bağımsız bir tırnak ve güzellik stüdyosudur.
+                            Bize göre tırnak bakımı, günlük bir rutin değil; kendinize ayırdığınız sessiz ve anlamlı bir andır.
+                            Her uygulamada hız yerine özeni, görsellik kadar sağlığı ön planda tutuyoruz.
+                        </p>
+                    </div>
+
+                    <div class="about__features-col">
+
+                        <div class="about__feature reveal">
+                            <span class="about__feature-num mono-label" aria-hidden="true">01</span>
+                            <div class="about__feature-body">
+                                <h3 class="about__feature-title">Hijyen Standartları</h3>
+                                <p class="about__feature-desc">Tek kullanımlık malzemeler ve profesyonel sterilizasyon protokolleriyle her seansta güvenli bir ortam sunuyoruz.</p>
+                            </div>
+                        </div>
+
+                        <div class="about__feature reveal">
+                            <span class="about__feature-num mono-label" aria-hidden="true">02</span>
+                            <div class="about__feature-body">
+                                <h3 class="about__feature-title">Uzman Ekip</h3>
+                                <p class="about__feature-desc">Yurt içi ve uluslararası sertifikalı uzmanlarımız, güncel teknikler ve trendlerle sürekli kendini yeniler.</p>
+                            </div>
+                        </div>
+
+                        <div class="about__feature reveal">
+                            <span class="about__feature-num mono-label" aria-hidden="true">03</span>
+                            <div class="about__feature-body">
+                                <h3 class="about__feature-title">Kaliteli Ürünler</h3>
+                                <p class="about__feature-desc">Avrupa kaynaklı, dermatolojik açıdan test edilmiş oje ve bakım ürünleri kullanarak tırnağınızın sağlığını koruyoruz.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             APPOINTMENT
+        ============================================================ -->
+        <section class="appointment" id="appointment" aria-labelledby="appt-heading">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <p class="mono-label section-header__label">— RANDEVU</p>
+                    <h2 class="section-title" id="appt-heading">Yerinizi Ayırtın</h2>
+                    <p class="section-sub">Formu doldurun, WhatsApp üzerinden onay mesajı alalım.</p>
+                </header>
+
+                <form class="appointment-form reveal"
+                      id="appointment-form"
+                      aria-label="Randevu formu"
+                      novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="appt-name">Ad Soyad</label>
+                            <input class="form-input"
+                                   type="text"
+                                   id="appt-name"
+                                   name="name"
+                                   placeholder="Adınız Soyadınız"
+                                   autocomplete="name"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="appt-service">Hizmet</label>
+                            <select class="form-input form-select" id="appt-service" name="service" required>
+                                <option value="" disabled selected>Hizmet seçin…</option>
+                                <option value="Manikür & Cilt Bakımı">Manikür &amp; Cilt Bakımı</option>
+                                <option value="Pedikür & Cilt Bakımı">Pedikür &amp; Cilt Bakımı</option>
+                                <option value="Kalıcı Oje (Gel Polish)">Kalıcı Oje (Gel Polish)</option>
+                                <option value="Protez Tırnak (Akrilik/Jel)">Protez Tırnak (Akrilik / Jel)</option>
+                                <option value="Nail Art & Taş Süsleme">Nail Art &amp; Taş Süsleme</option>
+                                <option value="Kaş & Kirpik Laminasyonu">Kaş &amp; Kirpik Laminasyonu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="appt-date">Tarih</label>
+                            <input class="form-input" type="date" id="appt-date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="appt-time">Saat</label>
+                            <input class="form-input" type="time" id="appt-time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <label class="form-label" for="appt-note">Not <span class="form-label__opt">(isteğe bağlı)</span></label>
+                        <textarea class="form-input form-textarea"
+                                  id="appt-note"
+                                  name="note"
+                                  rows="3"
+                                  placeholder="Özel bir isteğiniz veya sormak istediğiniz bir şey varsa buraya yazabilirsiniz."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" width="18" height="18">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            WhatsApp'ta Gönder
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+             LOCATION
+        ============================================================ -->
+        <section class="location" id="location" aria-labelledby="location-heading">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <p class="mono-label section-header__label">— KONUM</p>
+                    <h2 class="section-title" id="location-heading">Bizi Bulun</h2>
+                </header>
+
+                <div class="location__inner">
+
+                    <div class="location__map-col reveal">
+                        <!-- Embedded map — coordinates: lat 39.887811, lng 32.888967 -->
+                        <iframe
+                            class="location__map"
+                            src="https://www.google.com/maps?q=39.887811,32.888967&z=17&output=embed"
+                            title="Blush Nail Beauty konumu — Google Haritalar"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            aria-label="Blush Nail Beauty harita konumu">
+                        </iframe>
+                        <a href="https://www.google.com/maps/place/Blush+Nail+Beauty/@39.8875413,32.8892574,19.73z/data=!4m6!3m5!1s0x14d34f8fbf13970b:0x8eb2d6bc916949c1!8m2!3d39.887811!4d32.888967!16s%2Fg%2F11sb96x5gz"
+                           class="btn btn--outline location__maps-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Google Haritalar'da Aç
+                        </a>
+                    </div>
+
+                    <div class="location__info-col reveal">
+
+                        <div class="location__info-block">
+                            <h3 class="location__info-title">Adres</h3>
+                            <!-- TODO: Replace address in config.js → business.address -->
+                            <address class="location__address" id="loc-address">
+                                Çankaya, Ankara<br>
+                                <span class="mono-label location__todo">TODO: config.js → address</span>
+                            </address>
+                        </div>
+
+                        <div class="location__info-block">
+                            <h3 class="location__info-title">Çalışma Saatleri</h3>
+                            <!-- TODO: Replace with actual working hours -->
+                            <table class="hours-table" aria-label="Çalışma saatleri tablosu">
+                                <tbody id="hours-tbody">
+                                    <tr>
+                                        <th class="hours-table__day" scope="row">Pzt – Cum</th>
+                                        <td class="hours-table__time mono-label">TODO: 00:00 – 00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="hours-table__day" scope="row">Cumartesi</th>
+                                        <td class="hours-table__time mono-label">TODO: 00:00 – 00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="hours-table__day" scope="row">Pazar</th>
+                                        <td class="hours-table__time mono-label">TODO: Kapalı / Saat</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="location__info-block">
+                            <h3 class="location__info-title">İletişim</h3>
+                            <!-- TODO: Replace phone in config.js → business.phone -->
+                            <p class="mono-label location__todo" id="loc-phone">TODO: config.js → phone</p>
+                            <a href="https://www.instagram.com/blush_nailbeauty/"
+                               class="location__ig-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                @blush_nailbeauty
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FLOATING WHATSAPP BUTTON
+    ============================================================ -->
+    <a href="#"
+       class="whatsapp-float js-whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="WhatsApp üzerinden iletişime geç">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    </a>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="site-footer" aria-label="Site alt bilgisi">
+        <div class="container">
+            <div class="site-footer__inner">
+
+                <div class="site-footer__brand">
+                    <a href="#top" class="nav-logo" aria-label="Blush Nail Beauty — sayfanın başına dön">
+                        <span class="nav-logo__brand">Blush</span>
+                        <span class="nav-logo__sub">NAIL BEAUTY</span>
+                    </a>
+                    <p class="site-footer__tagline">Ankara Çankaya'da tırnak bakım stüdyosu.</p>
+                </div>
+
+                <nav class="site-footer__nav" aria-label="Alt navigasyon">
+                    <a href="#services" class="site-footer__link">Hizmetler</a>
+                    <a href="#gallery"  class="site-footer__link">Galeri</a>
+                    <a href="#reviews"  class="site-footer__link">Yorumlar</a>
+                    <a href="#about"    class="site-footer__link">Hakkımızda</a>
+                    <a href="#location" class="site-footer__link">Konum</a>
+                    <a href="#appointment" class="site-footer__link">Randevu</a>
+                </nav>
+
+                <div class="site-footer__contact">
+                    <!-- TODO: Set address and phone in config.js -->
+                    <p class="site-footer__detail mono-label site-footer__todo" id="footer-address-text">TODO: config.js → address</p>
+                    <p class="site-footer__detail mono-label site-footer__todo" id="footer-phone-text">TODO: config.js → phone</p>
+                    <a href="https://www.instagram.com/blush_nailbeauty/"
+                       class="site-footer__ig"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Blush Nail Beauty Instagram sayfası">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        @blush_nailbeauty
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                <p class="mono-label site-footer__copy">© 2025 Blush Nail Beauty · Ankara Çankaya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
