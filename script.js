@@ -193,9 +193,46 @@ function initActiveNav() {
 }
 
 // ============================================================
+// SMOOTH SCROLLING — Lenis
+// ============================================================
+function initLenis() {
+    if (typeof Lenis === "undefined") return;
+    
+    var lenis = new Lenis({
+        duration: 1.2,
+        easing: function(t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+        direction: "vertical",
+        gestureDirection: "vertical",
+        smooth: true,
+        smoothTouch: false,
+        touchMultiplier: 2
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Make smooth scrolling work with anchor links (e.g. #services)
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault();
+            var targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            var target = document.querySelector(targetId);
+            if (target) {
+                lenis.scrollTo(target, { offset: -68 }); // -68px for the fixed header
+            }
+        });
+    });
+}
+
+// ============================================================
 // INIT
 // ============================================================
 document.addEventListener("DOMContentLoaded", function() {
+    initLenis();
     initWhatsAppLinks();
     initNav();
     initNavScroll();
